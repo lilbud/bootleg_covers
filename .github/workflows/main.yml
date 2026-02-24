@@ -1,6 +1,9 @@
 name: workflow_01
 on:
   push:
+      paths-ignore:
+      - 'main.yml'     # Ignore a specific file named config.yml
+      - '.gitignore'     # Ignore changes to the .gitignore file itself
   workflow_dispatch:
 
 jobs:
